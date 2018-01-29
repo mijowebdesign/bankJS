@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = 'bankApp'>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bank Angular</title>
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/mainControler.js"></script>
+  <script src="js/controllers/editDelController.js"></script>
+  <script src="js/controllers/editController.js"></script>
+  <script src="js/services/dbService.js"></script>
+  <script src="js/routs.js"></script>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center" ng-controller = 'mainCtrl'>
+    <div class="container">
+      <ul class="nav nabrar-nav navbar-right">
+        <li><button class="btn btn-info">Login</button></li>
+      </ul>
+    </div>
+
+    <h2>Bank APP</h2>
+    <a href="#"><button class="btn btn-primary">Accounts</button> </a>
+    <a href="#form"><button class="btn btn-info">Add Acc</button></a>
+    <a href="#editdel"><button class="btn btn-danger" >Edit/Delete</button></a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+
+
+          <ng-view>
+
+
+          </ng-view>
+
+          </div>
+
+
+</div>
+
+  </body>
+</html>

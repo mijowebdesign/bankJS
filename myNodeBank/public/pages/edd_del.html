@@ -1,0 +1,26 @@
+<h2 class="page-header">Edit/Delete</h3>
+<div class="col-lg-10 col-lg-offset-1" >
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Deposit</th>
+        <th>CreditCard</th>
+        <th>Edit/Delte</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat = 'account in accounts'>
+        <td >{{account._id}}</td>
+        <td >{{account.name}}</td>
+        <td >{{account.deposit}}</td>
+        <td >{{account.cCard}}</td>
+        <td ><button class="btn btn-warning" ng-click = 'edit(account._id)'>Edit</button>  <button class="btn btn-danger" ng-click = "del(account._id)">Delete</button> </td>
+      <tr>
+    </tbody>
+</table>
+
+</div>
